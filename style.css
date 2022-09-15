@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_content{
+    display: flex;
+}
+
+#name_and_tagline{
+    margin-left: 5%;
+}
+
+#authors_select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #732b2b;
+}
+
+#logo{
+
+}
+
+#logo img{
+    width: 7vw;
+    height: 7vw;
+}
+
+#tagline{
+    color:#732b2b;
+}
+
+#links{
+    color:#732b2b
+}
+
+#footer{
+
+}
+
+#social{
+    display: flex;
+    justify-content: end;
+}
