@@ -62,100 +62,68 @@ header{
 }
 
 main{
-
+    display: flex;
 }
 
-#authors_select{
+.photo_and_description{
+    margin-top: 2%;
+    margin-left: 5%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #732b2b;
-    font-size: 20px;
-}
-
-#authors_photos{
-    display: flex;
-    margin-top: 1%;
-    flex-wrap: wrap;
-}
-
-.photo_and_name{
-    display: flex;
     flex-direction: column;
-    width: 20%;
-    height: 400px;
-    margin-bottom: 2%;
-    padding: 0.5%;
+    width: 45%;
 }
-
 
 .photo{
-    width: 100%;
-    height: 87%;
+    width: 350px;
 }
 
 .photo img{
     width: 100%;
-    height: 100%;
 }
 
-.names{
-    display: flex;
-    text-align: center;
-}
-
-.names p{
-    font-size: 25px;
-    display: flex;
-}
-
-footer{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-#social{
+.description{
     margin-top: 5%;
-    width: 8%;
-}
-
-#social_text{
-
-}
-
-#social_photos{
+    margin-bottom: 2%;
+    color: #000000;
+    text-align: center;
+    flex-direction: column;
     display: flex;
-    height: 50%;
-    width: 100%;
+    justify-content: left;
 }
 
-#vk{
-    width: 25%;
-    height: 90%;
+#poems{
+    display: flex;
+    margin-left: 5%;
+    text-align: center;
+    flex-direction: column;
 }
 
-#vk img{
-    width: 100%;
-    height: 100%;
+#most_popular{
+    color: #732b2b;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-#inst{
-    width: 25%;
-    height: 90%;
+#poem_names{
+    margin-top: 5%;
 }
 
-#inst img{
-    width: 100%;
-    height: 100%;
+.poem{
+    padding: 3%;
 }
 
-#youtube{
-    width: 25%;
-    height: 90%;
+.poem a{
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
 }
 
-#youtube img{
-    width: 100%;
-    height: 100%;
+#all_poems{
+    text-align: center;
+    color: #732b2b;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }

@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: rgba(229, 194, 164, 0.58)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#header_content{
+    display: flex;
+}
+
+#logo{
+    margin-left: 20px;
+}
+
+#logo img{
+    width: 7vw;
+    height: 7vw;
+}
+
+#name_and_tagline{
+    margin-left: 5%;
+}
+
+#name{
+
+}
+
+#tagline{
+    color:#732b2b;
+}
+
+#links{
+    color:#732b2b
+}
+
+#links a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#all_authors{
+    margin-right: 20px;
+}
+
+#main_page{
+    margin-right: 20px;
+}
+
+main{
+    display: flex;
+}
+
+.photo_and_description{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.photo{
+    width: 350px;
+}
+
+.photo img{
+    width: 100%;
+}
+
+.description{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: #000000;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+}
+
+#poem_and_name{
+    margin-left: 5%;
+}
+
+#poem{
+    margin-top: 3%;
+    font-size: 20px;
+}
