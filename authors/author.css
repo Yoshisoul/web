@@ -15,7 +15,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: rgba(178, 119, 61, 0.58);
+    border-bottom: 2px solid;
 }
 
 #header_content{
@@ -63,6 +66,7 @@ header{
 
 main{
     display: flex;
+    margin-top: 1%;
 }
 
 .photo_and_description{
