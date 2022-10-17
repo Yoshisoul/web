@@ -5,131 +5,132 @@
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="Alexander Shlegel">
     <meta name="description" content="Сайта для поиска стихотворений разных авторов">
-    <meta name="keywords" content="Стихотворения авторы стихи">
+    <meta name="keywords" content="Стихотворения, авторы, стихи">
+<!--    <meta name="viewport" content="width=940">-->
+    <meta name="viewport" content="width=device-width">
     <title>Стихи.ру</title>
 </head>
+
 <body>
-    <header>
-        <div id ="header_content">
-            <div id = "logo">
-                <a href="index.html" >
-                    <img src = "pictures/logo.png" alt = "Лого"/>
-                </a>
-            </div>
-
-            <div id="name_and_tagline">
-                <div id="name">
-                    <h1> <strong>Стихотворения.ру</strong> </h1>
+    <div class="wrapper">
+        <div class="header">
+            <div class ="header__content">
+                <div class = "header__logo">
+                    <a href="index.html" >
+                        <img src = "pictures/logo.png" alt = "Лого"/>
+                    </a>
                 </div>
-
-                <div id="tagline">
-                    <h3> <strong>"В начале было слово" </strong> </h3>
+                <div class="header__name-and-tagline">
+                    <div class="header__name">
+                        <h1> <strong>Стихотворения.ру</strong> </h1>
+                    </div>
+                    <div class="header__tagline">
+                        <h3> <strong>"В начале было слово" </strong> </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="header__links" id="header__links">
+                <div class = "header__link">
+                    <a href="all_authors.html"> <b> Все авторы </b> </a>
+                </div>
+                <div class = "header__link">
+                    <a href="index.html"> <b> Главная </b> </a>
+                </div>
+            </div>
+            <div class="header__menu" id="header__menu">
+                <div class="header__menu-line"></div>
+                <div class="header__menu-line"></div>
+                <div class="header__menu-line"></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__authors-select">
+                <h1> <em> Наш выбор авторов </em> </h1>
+            </div>
+            <div class="main__authors-photos">
+                <div class="main__photo-and-name">
+                    <div class="main__photos">
+                        <a href="authors/pushkin/pushkin.html" >
+                            <img src = "pictures/pushkin.jpg"/>
+                        </a>
+                    </div>
+                    <div class="main__names">
+                        <p><b>Алекса́ндр Серге́евич Пу́шкин</b></p>
+                    </div>
+                </div>
+                <div class="main__photo-and-name">
+                    <div class="main__photos">
+                        <a href="authors/esenin/esenin.html">
+                            <img src = "pictures/esenin.jpg"/>
+                        </a>
+                    </div>
+                    <div class="main__names">
+                        <p><b>Серге́й Алекса́ндрович Есе́нин</b></p>
+                    </div>
+                </div>
+                <div class="main__photo-and-name">
+                    <div class="main__photos">
+                        <a href="authors/lermontov/lermontov.html">
+                            <img src = "pictures/lermontov.jpg"/>
+                        </a>
+                    </div>
+                    <div class="main__names">
+                        <p><b>Михаи́л Ю́рьевич Ле́рмонтов</b></p>
+                    </div>
+                </div>
+                <div class="main__photo-and-name">
+                    <div class="main__photos">
+                        <a href="authors/blok/blok.html" >
+                            <img src = "pictures/blok.jpeg"/>
+                        </a>
+                    </div>
+                    <div class="main__names">
+                        <p><b>Алекса́ндр Алекса́ндрович Блок</b></p>
+                    </div>
+                </div>
+                <div class="main__photo-and-name">
+                    <div class="main__photos">
+                        <a href="authors/mayakovskiy/mayakovskiy.html">
+                            <img src = "pictures/mayakovskiy.jpg"/>
+                        </a>
+                    </div>
+                    <div class="main__names">
+                        <p><b>Влади́мир Влади́мирович Маяко́вский</b></p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="links">
-            <div id = "all_authors">
-                <a href="all_authors.html"> <b> Все авторы </b> </a>
-            </div>
-
-            <div id = "main_page">
-                <a href="index.html"> <b> Главная </b> </a>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div id="authors_select">
-            <h1> <em> Наш выбор авторов </em> </h1>
-        </div>
-
-        <div id="authors_photos">
-            <div class="photo_and_name">
-                <div class ="photo">
-                    <a href="authors/pushkin/pushkin.html" >
-                        <img src = "pictures/pushkin.jpg"/>
-                    </a>
-                </div>
-                <div class="names">
-                    <p><b>Алекса́ндр Серге́евич Пу́шкин</b></p>
-                </div>
-            </div>
-
-            <div class="photo_and_name">
-                <div class ="photo">
-                    <a href="authors/esenin/esenin.html" >
-                        <img src = "pictures/esenin.jpg"/>
-                    </a>
-                </div>
-                <div class="names">
-                    <p><b>Серге́й Алекса́ндрович Есе́нин</b></p>
-                </div>
-            </div>
-
-            <div class="photo_and_name">
-                <div class="photo">
-                    <a href="authors/lermontov/lermontov.html" >
-                        <img src = "pictures/lermontov.jpg"/>
-                    </a>
-                </div>
-                <div class="names">
-                    <p><b>Михаи́л Ю́рьевич Ле́рмонтов</b></p>
-                </div>
-            </div>
-
-            <div class="photo_and_name">
-                <div class="photo">
-                    <a href="authors/blok/blok.html" >
-                        <img src = "pictures/blok.jpeg"/>
-                    </a>
-                </div>
-                <div class="names">
-                    <p><b>Алекса́ндр Алекса́ндрович Блок</b></p>
-                </div>
-            </div>
-
-            <div class="photo_and_name">
-                <div class ="photo">
-                    <a href="authors/mayakovskiy/mayakovskiy.html">
-                        <img src = "pictures/mayakovskiy.jpg"/>
-                    </a>
-                </div>
-                <div class="names">
-                    <p><b>Влади́мир Влади́мирович Маяко́вский</b></p>
+        <div class="footer">
+            <div class = footer__social>
+                <div class="footer__social-photos">
+                    <div class="footer__icon">
+                        <a href="vk.com" >
+                            <img src = "pictures/vk.png"/>
+                        </a>
+                    </div>
+                    <div class="footer__icon">
+                        <a href="instagram.com" >
+                            <img src = "pictures/instagram.png"/>
+                        </a>
+                    </div>
+                    <div class="footer__icon">
+                        <a href="https://www.youtube.com">
+                            <img src = "pictures/youtube.png"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-
-
-    <footer>
-        <div id = social>
-            <div id="social_text">
-                <b>Наши соцсети:</b>
-            </div>
-
-            <div id="social_photos">
-                <div id="vk">
-                    <a href="vk.com" >
-                        <img src = "pictures/vk.png"/>
-                    </a>
-                </div>
-
-                <div id="inst">
-                    <a href="instagram.com" >
-                        <img src = "pictures/instagram.png"/>
-                    </a>
-                </div>
-
-                <div id="youtube">
-                    <a href="https://www.youtube.com">
-                        <img src = "pictures/youtube.png"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 </body>
+
+<script>
+    const headerMenu = document.getElementById('header__menu');
+    const navList = document.getElementById('header__links');
+
+    headerMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+</script>
 
 </html>
