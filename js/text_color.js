@@ -1,10 +1,3 @@
-const headerMenu = document.getElementById('header__menu');
-const navList = document.getElementById('header__links');
-
-headerMenu.addEventListener('click', () => {
-    navList.classList.toggle('active');
-})
-
 const mainPhotos = document.querySelectorAll('.main__photos');
 
 mainPhotos.forEach(img => {
