@@ -49,14 +49,20 @@
 
   <div class="main">
     <div class="main__photo-and-description">
-      <div class ="main__photo">
-        <a href="pushkin.html" >
-          <img src = "../../../pictures/blok.jpeg"/>
-        </a>
+      <div class ="main__photo" id="blockDiv">
+        <img src = "../../../pictures/blok.jpeg" id="blockImg"/> 
       </div>
       <div class="main__description">
         <p><b>Алекса́ндр Алекса́ндрович Блок</b></p>
         <p>Русский поэт Серебряного века, писатель, публицист, драматург, переводчик, литературный критик. Классик русской литературы XX столетия, один из крупнейших представителей русского символизма.</p>
+      </div>
+      <div class = "main__comment">
+        <textarea id="textarea" autofocus="on">
+  
+        </textarea>
+        <button onclick="getValue()" id="comment_button">
+          <p>Comment</p>
+        </button>
       </div>
     </div>
     <div class="main__poem-and-name">
@@ -76,17 +82,14 @@
           <p><i>1912 г.</i></p>
         </div>
       </div>
+      <button class="main__button" id="play-btn">Play</button>
+      <p><a href="https://1-notes.com/javascript-play-an-audio-file/" target="_blank" rel="noopener"></a></p>
     </div>
   </div>
 </body>
 
-<script>
-  const headerMenu = document.getElementById('header__menu');
-  const navList = document.getElementById('header__links');
-
-  headerMenu.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  })
-</script>
+<script src="../../../js/loop.js"> </script>
+<script src="../../../js/player.js"> </script>
+<script src="../../../js/comment.js"> </script>
 
 </html>
