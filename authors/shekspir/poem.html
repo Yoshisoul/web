@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../blok/poems.css">
+  <meta name="author" content="Alexander Shlegel">
+  <meta name="description" content="Сайта для поиска стихотворений разных авторов">
+  <meta name="keywords" content="Стихотворения авторы стихи">
+  <meta name="viewport" content="width=device-width">
+  <title>Стихи.ру</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class = "header__content">
+      <div class = "header__logo">
+        <a href="../../../index.html" >
+          <img src = "../../../pictures/logo.png" alt = "Лого"/>
+        </a>
+      </div>
+
+      <div class="header__name-and-tagline">
+        <div class="header__name">
+          <h1> <strong>Стихотворения.ру</strong> </h1>
+        </div>
+
+        <div class="header__tagline">
+          <h3> <strong>"В начале было слово" </strong> </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__links" id="header__links">
+      <div class="header__link">
+        <a href="../../../all_authors.html"> <b> Все авторы </b> </a>
+      </div>
+
+      <div class="header__link">
+        <a href="../../../index.html"> <b> Главная </b> </a>
+      </div>
+    </div>
+
+    <div class="header__menu" id="header__menu">
+      <div class="header__menu-line"></div>
+      <div class="header__menu-line"></div>
+      <div class="header__menu-line"></div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main__photo-and-description">
+      <div class ="main__photo" id="photo_div">
+        <img src = "../../pictures/shekspir.png" id="image"/> 
+      </div>
+      <div class="main__description">
+        <p><b>Уи́льям Шекспи́р</b></p>
+        <p>Английский поэт и драматург, зачастую считается величайшим англоязычным писателем и одним из лучших драматургов мира. Часто именуется национальным поэтом Англии.</p>
+      </div>
+      <div class = "main__comment">
+        <textarea id="textarea" autofocus="on">
+  
+        </textarea>
+        <button onclick="getValue()" id="comment_button">
+          <p>Comment</p>
+        </button>
+      </div>
+    </div>
+    <div class="main__poem-and-name">
+      <div class="main__poem-name">
+        <div class = "main__poem">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="../../../js/burger.js"> </script>
+<script src="../../../js/loop.js"> </script>
+<script src="../../../js/comment.js"> </script>
+<script src="../../../js/showtextpoem.js"> </script>
+
+</html>

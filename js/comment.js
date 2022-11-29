@@ -1,4 +1,3 @@
-
 var count = localStorage.length;
 var comments = {};
 function createReplyBox(replyCount, replyButton, dynamicCommentBox){
@@ -69,9 +68,8 @@ function createCommentBox(commentBoxText, count){
     var space = document.createElement('div');
     space.innerHTML = ' ';
     space.style.marginBottom = '10px';
-    dynamicCommentBox.appendChild(space);
+    dynamicCommentBox.appendChild(space);    
 
-    // сохранять комментарий в localStorage по отдельности с помощью id комментария в качестве ключа и сам комментарий в качестве значения
     localStorage.setItem(count, commentBoxText);
 }
 
@@ -86,8 +84,6 @@ function getValue(){
 
     createCommentBox(commentBoxText,count);
 }
-
-// функция, которая выводит все комментарии из localStorage на страницу в порядке их добавления
 function showComments(){
     var mainComment = document.querySelector('.main__comment');
     for (var i = 0; i < localStorage.length; i++){
@@ -129,20 +125,9 @@ function showComments(){
     }
 }
 
-// function showComments(){
-//     for (var i = 0; i < localStorage.length; i++){
-//         var key = localStorage.key(i);
-//         var value = localStorage.getItem(key);
-//         console.log(key, value);
-
-//         createCommentBox(value, key);
-//     }
-// }
-
-// функция загрузки страницы
 function loadPage(){
     showComments();
-    console.log(localStorage);
+    localStorage.clear();
 }
 
 window.addEventListener('load', loadPage);

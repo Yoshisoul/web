@@ -18,7 +18,7 @@ function magnify(imgID, zoom) {
     img.addEventListener("mousemove", moveMagnifier);
     glass.style.display = 'none';
 
-    const blockDiv = document.getElementById('blockDiv');
+    const blockDiv = document.getElementById('photo_div');
 
     blockDiv.addEventListener('mouseout', () => {
         glass.style.display = 'none';
@@ -65,4 +65,4 @@ function magnify(imgID, zoom) {
     }
   }
 
-magnify("blockImg", 3);
+magnify("image", 3);
