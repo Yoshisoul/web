@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../poems.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <meta name="author" content="Alexander Shlegel">
   <meta name="description" content="Сайта для поиска стихотворений разных авторов">
   <meta name="keywords" content="Стихотворения авторы стихи">
@@ -49,8 +51,8 @@
 
   <div class="main">
     <div class="main__photo-and-description">
-      <div class ="main__photo" id="blockDiv">
-        <img src = "../../../pictures/blok.jpeg" id="blockImg"/> 
+      <div class ="main__photo" id="photo_div">
+        <img src = "../../../pictures/blok.jpeg" id="image"/> 
       </div>
       <div class="main__description">
         <p><b>Алекса́ндр Алекса́ндрович Блок</b></p>
@@ -65,22 +67,23 @@
         </button>
       </div>
     </div>
+
     <div class="main__poem-and-name">
       <div class="main__poem-name">
         <h1> Ночь, улица, фонарь, аптека… </h1>
-        <div class = "main__poem">
-          <p>Ночь, улица, фонарь, аптека,</p>
-          <p>Бессмысленный и тусклый свет.</p>
-          <p>Живи еще хоть четверть века —</p>
-          <p>Всё будет так. Исхода нет.</p>
-          <br>
-          <p>Умрешь — начнешь опять сначала</p>
-          <p>И повторится всё, как встарь:</p>
-          <p>Ночь, ледяная рябь канала,</p>
-          <p>Аптека, улица, фонарь.</p>
-          <br>
-          <p><i>1912 г.</i></p>
-        </div>
+      </div>
+      <div class = "main__poem">
+        <p>Ночь, улица, фонарь, аптека,</p>
+        <p>Бессмысленный и тусклый свет.</p>
+        <p>Живи еще хоть четверть века —</p>
+        <p>Всё будет так. Исхода нет.</p>
+        <br>
+        <p>Умрешь — начнешь опять сначала</p>
+        <p>И повторится всё, как встарь:</p>
+        <p>Ночь, ледяная рябь канала,</p>
+        <p>Аптека, улица, фонарь.</p>
+        <br>
+        <p><i>1912 г.</i></p>
       </div>
       <button class="main__button" id="play-btn">Play</button>
       <p><a href="https://1-notes.com/javascript-play-an-audio-file/" target="_blank" rel="noopener"></a></p>
@@ -92,5 +95,6 @@
 <script src="../../../js/loop.js"> </script>
 <script src="../../../js/comment.js"> </script>
 <script src="../../../js/player.js"> </script>
+<script src="../../../js/textanimation.js"> </script>
 
 </html>

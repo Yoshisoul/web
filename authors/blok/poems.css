@@ -175,6 +175,8 @@ body{
     text-align: center;
     flex-direction: column;
     display: flex;
+    display: inline-block;
+    position: relative;
 }
 
 @media all and (max-width: 750px) {
@@ -185,12 +187,21 @@ body{
 }
 
 .main__poem-and-name{
+    display: flex;
+    flex-direction: column;
     margin-left: 5%;
+}
+
+.main__poem-name{
+    display: inline-block;
+    position: relative;
 }
 
 .main__poem{
     margin-top: 3%;
     font-size: 20px;
+    display: inline-block;
+    position: relative;
 }
 
 .main__button {
